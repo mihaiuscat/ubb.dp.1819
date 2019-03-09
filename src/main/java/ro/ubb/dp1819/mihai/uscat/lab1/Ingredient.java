@@ -44,7 +44,10 @@ public class Ingredient {
     }
 
     public String getAdjective() {
-        return adjective;
+        if(this.adjective != null) {
+            return adjective;
+        }
+        return "";
     }
 
     public void setAdjective(String adjective) {
@@ -54,10 +57,10 @@ public class Ingredient {
     @Override
     public String toString() {
         return "Ingredient{" +
-                "quantity='" + quantity + '\'' +
-                ", unit='" + unit + '\'' +
-                ", ingredient='" + ingredient + '\'' +
-                ", adjective='" + adjective + '\'' +
+                "quantity='" + getQuantity() + '\'' +
+                ", unit='" + getUnit() + '\'' +
+                ", ingredient='" + getIngredient() + '\'' +
+                ", adjective='" + getAdjective() + '\'' +
                 '}';
     }
 }
