@@ -1,18 +1,18 @@
 package ro.ubb.dp1819.mihai.uscat.lab1;
 
-public class Coffee {
+public class Ingredient {
     private String quantity;
     private String unit;
     private String ingredient;
     private String adjective;
 
-    public Coffee(String quantity, String unit, String ingredient) {
+    public Ingredient(String quantity, String unit, String ingredient) {
         this.quantity = quantity;
         this.unit = unit;
         this.ingredient = ingredient;
     }
 
-    public Coffee(String quantity, String unit, String ingredient, String adjective) {
+    public Ingredient(String quantity, String unit, String ingredient, String adjective) {
         this.quantity = quantity;
         this.unit = unit;
         this.ingredient = ingredient;
@@ -53,7 +53,7 @@ public class Coffee {
 
     @Override
     public String toString() {
-        return "Coffee{" +
+        return "Ingredient{" +
                 "quantity='" + quantity + '\'' +
                 ", unit='" + unit + '\'' +
                 ", ingredient='" + ingredient + '\'' +
